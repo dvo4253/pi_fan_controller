@@ -9,7 +9,7 @@ def index():
     cpuTemp = float(cpuTempFile.read()) / 1000
     cpuTempFile.close()
     print(cpuTemp)
-    return cpuTemp
+    return str(cpuTemp)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0') 
