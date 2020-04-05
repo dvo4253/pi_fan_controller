@@ -7,7 +7,7 @@ import sys
 import os
 import requests
 # Get environment variables
-RASP_PI_1_URL = os.getenv('RASP_PI_1_CPU_TEMP_URL')
+#RASP_PI_1_URL = os.getenv('RASP_PI_1_CPU_TEMP_URL')
 
 # Modified from https://www.instructables.com/id/PWM-Regulated-Fan-Based-on-CPU-Temperature-for-Ras/
 
@@ -50,10 +50,10 @@ try:
 
 
         # sending get request and saving the response as response object 
-        R_PI_1_TEMP_REQUEST = requests.get(url = RASP_PI_1_URL) 
+        #R_PI_1_TEMP_REQUEST = requests.get(url = RASP_PI_1_URL) 
   
         # extracting data in json format 
-        data = R_PI_1_TEMP_REQUEST.json() 
+        #data = R_PI_1_TEMP_REQUEST.json() 
 
         # Calculate desired fan speed
         if abs(cpuTemp - cpuTempOld) > hyst:
