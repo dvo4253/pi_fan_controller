@@ -48,7 +48,7 @@ try:
         cpuTemp = float(cpuTempFile.read()) / 1000
         cpuTempFile.close()
 
-
+        print(cpuTemp)
         # sending get request and saving the response as response object 
         #R_PI_1_TEMP_REQUEST = requests.get(url = RASP_PI_1_URL) 
   
