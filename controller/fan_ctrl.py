@@ -18,7 +18,7 @@ FAN_MIN = 35  # [%] Fan minimum speed.
 PWM_FREQ = 30  # [Hz] Change this value if fan has strange behavior
 
 # Configurable temperature and fan speed steps
-tempSteps = [40, 60]  # [°C]
+tempSteps = [37, 60]  # [°C]
 speedSteps = [0, 100]  # [%]
 
 # Fan speed will change only of the difference of temperature is higher than hysteresis
@@ -48,7 +48,6 @@ try:
         cpuTemp = float(cpuTempFile.read()) / 1000
         cpuTempFile.close()
 
-        print(cpuTemp)
         # sending get request and saving the response as response object 
         #R_PI_1_TEMP_REQUEST = requests.get(url = RASP_PI_1_URL) 
   
